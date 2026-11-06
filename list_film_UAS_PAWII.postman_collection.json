@@ -1,0 +1,213 @@
+{
+  "info": {
+    "_postman_id": "694943c7-bd69-4da6-9293-5557deec072d",
+    "name": "list_film_UAS_PAWII",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55342228",
+    "_collection_link": "https://go.postman.co/collection/55342228-694943c7-bd69-4da6-9293-5557deec072d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "LIST DAFTAR FILM",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Godzilla vs. Kong\",\r\n\"genre\":\"Action\",\r\n\"duration_minutes\": 100,\r\n\"is_watched\":false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/daftar_film",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "daftar_film"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "BUAT DAFTAR FILM",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Godzilla vs. Kong\",\"genre\":\"Action\", \"duration_minutes\": 135, \"is_watched\" :false}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/daftar_film",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "daftar_film"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DETAIL DATA BERDASARKAN ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Godzilla vs. Kong\",\r\n\"genre\":\"Action\",\r\n\"duration_minutes\": 100,\r\n\"is_watched\":false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/daftar_film/6aedb973a6e209f283a105ca",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "daftar_film",
+            "6aedb973a6e209f283a105ca"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "MENGHAPUS DATA FILM",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Ben 10 V2\",\r\n\"genre\":\"Action\",\r\n\"duration_minutes\": 100,\r\n\"is_watched\":false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/daftar_film/6aedb973a6e209f283a105ca",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "daftar_film",
+            "6aedb973a6e209f283a105ca"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "MEMPERBAHARUI DATA FILM",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Godzilla vs Kong Extended\",\r\n\"genre\":\"Action\",\r\n\"duration_minutes\": 100,\r\n\"is_watched\":false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/daftar_film/6aedb83e840289861b4cf279",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "daftar_film",
+            "6aedb83e840289861b4cf279"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SORT ASC & DESC",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Godzilla vs. Kong\",\r\n\"genre\":\"Action\",\r\n\"duration_minutes\": 100,\r\n\"is_watched\":false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/daftar_film?sort=asc",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "daftar_film"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "desc",
+              "disabled": true
+            },
+            {
+              "key": "sort",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SEARCH BERDASARKAN VALUE",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"Godzilla vs. Kong\",\r\n\"genre\":\"Action\",\r\n\"duration_minutes\": 100,\r\n\"is_watched\":false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/daftar_film?search=Batman",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "daftar_film"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Batman"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
